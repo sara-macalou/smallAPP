@@ -1,0 +1,18 @@
+<div class="filterListContainer">
+  <div class="filterListContainer__head">
+    <div class="title">
+      <h5>Post List</h5>
+    </div>
+    <form [formGroup]="filterForm" >
+      <input type="text" class="input" name="filter" formControlName="filter" placeholder="Filter posts">
+    </form>
+  </div>
+  <div>
+      <div class="itemPost" *ngFor="let postItem of filteredListData"
+        [ngClass]="{'itemPost__selected' : postItem.selected}" 
+        (click)="selectItem(postItem)"
+      >
+        {{ postItem.name}}
+    </div>
+  </div>
+</div>

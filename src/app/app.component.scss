@@ -1,0 +1,50 @@
+.navfixed {
+  height: 100px;
+  text-align: center;
+
+  &__header {
+    background-color: peru;
+  }
+
+  &__footer {
+    background-color: teal;
+  }
+}
+
+.content-body {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: row;
+  justify-content : center;
+  max-height: calc(100vh - 200px);
+  width: 100vw;
+  flex-wrap: wrap;
+  overflow: hidden;
+
+  &__columnFixed {
+    min-height: 100%;
+    min-width: 300px;
+    max-width: 300px;
+    height: calc(100vh - 200px);
+    overflow-y: auto;
+  
+    &__left {
+      background-color:khaki;
+    }
+
+    &__right {
+      background-color: palevioletred;
+    }
+
+  }
+
+  &__columnFlex {
+    width: calc(100% - 600px);
+    height: calc(100vh - 200px);
+    overflow-y: auto;
+  }
+}

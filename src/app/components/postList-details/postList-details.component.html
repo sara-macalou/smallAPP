@@ -1,0 +1,13 @@
+
+<div class="postList-header"> <h5>Post List Detail</h5></div>
+<div class="postList-detail">
+  <div class="itemDetail" *ngFor="let postItem of postListData"
+    [ngClass]="{'itemDetail__selected' : postItem.selected}"
+  >
+    <div class="itemTitle">
+      <span>{{ postItem.name}}</span>
+      <span class="icon-delete" (click)="deleteItem(postItem)">X</span>
+    </div> 
+    <div class="itemContent">{{  postItem.content}}</div>
+</div>
+</div>

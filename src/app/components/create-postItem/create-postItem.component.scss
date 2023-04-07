@@ -1,0 +1,35 @@
+.centerContainer {
+  display: flex;
+  justify-content: center;
+  margin : 20px;
+
+  .formContent {
+    width: 400px;
+    border: 1px solid black;
+    border-radius:  15px;
+    
+    .titleForm {
+      padding: 15px;
+      font-weight: bold;
+    }
+
+    .formItem {
+      padding: 15px;
+
+      input,
+      textArea {
+        width: 100%;
+      }
+    }
+
+    .formAction {
+      padding-right: 15px;
+      text-align: right;
+    }
+
+    label {
+      display: block;
+    }
+  }
+}
+

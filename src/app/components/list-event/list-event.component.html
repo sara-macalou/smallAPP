@@ -1,0 +1,8 @@
+<div class="event-action-container">
+  <h5>Event list</h5>
+  <div class="event-action-item" *ngFor="let eventAction of (listevents$ | async)">
+    <span class="event-action-item__info">{{ eventAction.name}}</span>
+    <span class="event-action-item__info">{{ eventAction.type }}</span>
+    <span class="event-action-item__date">at {{ eventAction.date }}</span>
+  </div>
+</div>

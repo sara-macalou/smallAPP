@@ -1,0 +1,48 @@
+
+.postList-header {
+  display : flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.postList-detail{
+  display : flex;
+  flex-wrap:wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  overflow: hidden;
+  overflow-y: auto;
+  row-gap: 30px;
+  margin-top: 30px;
+
+  .itemDetail {
+    width: 300px;
+    height: 200px;
+
+    border: 1px solid black;
+    border-radius:  15px;
+    overflow: hidden;
+    overflow-y: auto;
+
+    &__selected{
+      border-color: red;
+    }
+
+    .itemTitle {
+      display: flex;
+      padding: 15px;
+      font-weight: bold;
+      justify-content: space-between;
+
+      .icon-delete {
+        right: 15px;
+        cursor : pointer;
+      }
+    }
+
+    .itemContent {
+      padding: 15px;
+    }
+
+  }
+}

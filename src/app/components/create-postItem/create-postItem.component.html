@@ -1,0 +1,19 @@
+<div class="centerContainer">
+  <div class="formContent">
+    <div class="titleForm">Create a new post</div>
+    <form [formGroup]="createForm">
+      <div class="formItem">
+        <label>Name</label>
+        <input type="text" name="name" formControlName="name" placeholder="Filter posts">
+      </div>
+      <div class="formItem">
+        <label for="description">Content</label>
+        <textarea  name="description" formControlName="description" ></textarea>
+      </div>
+      <div class="formAction">
+        <button class="button btn btn-cancel" (click)="resetPost()">Reset</button>
+        <button class="button btn btn-primary" [disabled]="hasInvalidName" (click)="savePost()">Save</button>
+      </div>
+    </form>
+  </div>
+</div>
